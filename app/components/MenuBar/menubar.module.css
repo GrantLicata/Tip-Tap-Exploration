@@ -1,0 +1,23 @@
+.activeButton {
+  margin: 5px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #444343;
+  color: white;
+}
+
+.inactiveButton {
+  margin: 5px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(222, 217, 217);
+  color: #444343;
+}
+
+.genericButton {
+  margin: 5px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(222, 217, 217);
+  color: #444343;
+}
