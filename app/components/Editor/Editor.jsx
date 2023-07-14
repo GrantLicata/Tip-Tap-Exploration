@@ -9,7 +9,7 @@ import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import MenuBar from "../MenuBar/MenuBar";
 
-export default () => {
+const Editor = () => {
   const editor = useEditor({
     extensions: [
       Color.configure({ types: [TextStyle.name, ListItem.name] }),
@@ -65,9 +65,14 @@ export default () => {
       <div className="rounded-t-lg bg-white py-2">
         <MenuBar editor={editor} />
       </div>
-      <div className="p-4 rounded-b-lg bg-slate-200">
-        <EditorContent editor={editor} />
+      <div>
+        <EditorContent
+          editor={editor}
+          className="p-4 rounded-b-lg bg-slate-200 focus:ring-0 focus:border-none"
+        />
       </div>
     </div>
   );
 };
+
+export default Editor;
